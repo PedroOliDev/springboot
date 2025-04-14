@@ -23,5 +23,6 @@ public class TransactionService {
                 //.filter(transaction -> transaction.getDataHora().isAfter(now.minusSeconds(60)))
                 .mapToDouble(Transaction::getValor)
                 .summaryStatistics();   
+                
     }
 }
